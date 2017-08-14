@@ -4,8 +4,8 @@ ENV LANG='en_US.UTF-8' \
     LANGUAGE='en_US.UTF-8' \
     TERM='xterm' 
 
-RUN apk --no-cache upgrade && \
-    apk add --no-cache --virtual=run-deps certbot
+RUN apk --no-cache upgrade
+RUN apk add --no-cache --virtual=run-deps certbot
 
 RUN rm -rf /tmp/* \
            /var/cache/apk/*  \
