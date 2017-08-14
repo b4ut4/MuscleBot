@@ -13,10 +13,7 @@ RUN rm -rf /tmp/* \
 
 VOLUME ["/etc/letsencrypt"]
 
-COPY ./docker-entrypoint.sh /
-
 EXPOSE 80
 EXPOSE 443
 
-ENTRYPOINT ["/docker-entrypoint.sh"]
 CMD ["certbot"]
