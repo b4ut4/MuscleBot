@@ -23,8 +23,6 @@ Renewing certificate
     docker run --rm --name=musclebot \
     -v /etc/localtime:/etc/localtime:ro \
     -v <path to certificates>:/etc/letsencrypt \
-    -e DOCKMAIL=<admin@example.az> \
-    -e DOCKMAILDOMAINS=<domains list> \
     -p 80:80 \
     -p 443:443 \
     sb/musclebot certbot renew 
