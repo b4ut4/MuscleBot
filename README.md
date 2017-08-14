@@ -5,7 +5,7 @@ Usage
 
 Build
     
-    docker build -t sb/musclebot . 
+    docker build -t bt/musclebot . 
 
 Generating certificate
 
@@ -14,7 +14,7 @@ Generating certificate
     -v <path to certificates>:/etc/letsencrypt \
     -p 80:80 \
     -p 443:443 \
-    sb/musclebot certbot \
+    bt/musclebot certbot \
     certonly \
     --standalone \
     --agree-tos \
@@ -29,4 +29,4 @@ Renewing certificate
     -v <path to certificates>:/etc/letsencrypt \
     -p 80:80 \
     -p 443:443 \
-    sb/musclebot certbot renew 
+    bt/musclebot certbot renew 
