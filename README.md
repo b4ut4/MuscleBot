@@ -27,4 +27,4 @@ Renewing certificate
     -e DOCKMAILDOMAINS=<domains list> \
     -p 80:80 \
     -p 443:443 \
-    sb/musclebot certbot-renew 
+    sb/musclebot certbot renew 
